@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Splace</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <nav class="menu">
+    <ul class="listSection border-radius-active">
+      <li class="vale"><img class="logo" src="assets/logo/Logo_splace.svg"></li>
+      <li class="navbar-toggle vale2"><i class="fas fa-bars"></i></li>
+      <li class="navbarText"><a href="smartworker/worker.html">Per chi lavora</a></li>
+      <li class="navbarText"><a href="smartworker/host.html">Per chi offre spazi</a></li>
+      <li class="navbarLine"></li>
+      <li class="navbarText login"><a href="#" class="login-btn">Accedi</a></li>
+    </ul>
+  </nav>
+
+  <section class="banner-area">
+    <div class="banner-img"></div>
+    <div class="banner-content">
+      <h1>Il tuo lavoro.</h1>
+      <h1 class="payoff"><span>Dove vuoi,<br> con chi vuoi.</span></h1>
+      <h3>L’unico servizio per lavoratori in smart working<br> che permette lo sviluppo di microcomunità,<br> attraverso parternship con strutture locali e privati.</h3>
+      <div class="btn-container">
+        <a href="#" class="banner-btn">Scarica su iOS</a>
+        <a href="#" class="banner-btn">Scarica su Android</a>
+      </div>
+    </div>
+    <div class="next-section">
+      <p>Scopri di più</p>
+      <i class="fas fa-angle-down"></i>
+    </div>
+  </section>
+
+  <section class="service-area" id="services">
+    <ul class="services-content">
+      <li>
+        <img src="assets/features/img_list1.png">
+        <h4>Personalizza</h4>
+        <p>Fatti guidare dai tuoi interessi e dalle tue esigenze! Trova nuovi spazi e conosci persone simili a te.</p>
+      </li>
+      <li>
+        <img src="assets/features/img_list2.png">
+        <h4>Organizza</h4>
+        <p>Lasciati ispirare e cambia spazio ogni giorno. Gestisci le tue prenotazioni e organizza la tua settimana in base alle tue necessità.</p>
+      </li>
+      <li>
+        <img src="assets/features/img_list3.png">
+        <h4>Condividi</h4>
+        <p>Esplora gli spazi e condividili con la tua comunità per rivoluzionare lo smartworking e sperimentare una nuova modalità di lavoro a distanza.</p>
+      </li>
+      <li>
+        <img src="assets/features/img_list4.png">
+        <h4>Partecipa</h4>
+        <p>Scopri le attività proposte dagli host e cerca quelle più affini ai tuoi interessi per concederti una pausa dal lavoro.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="video">
+    <div class="video-container">
+      <video controls width="1920" height="1080" poster="assets/home/firstframe.png">
+        <source src="./assets/home/splace_adv.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="split-area" id="split">
+    <ul class="split-content">
+      <li>
+        <img src="assets/home/split/worker.png">
+        <h4><span>Sei uno smartworker?</span></h4>
+        <p>Trova il tuo spazio di lavoro ideale, crea la tua comunità e scopri un nuovo modo di lavorare.</p>
+        <a href="smartworker/worker.html" class="banner-btn">Inizia adesso</a>
+      </li>
+      <li>
+        <img src="assets/home/split/host.jpg">
+        <h4><span>Hai un locale?</span></h4>
+        <p>Metti a disposizione il tuo spazio e scopri nuove opportunità per sfruttarlo al meglio.</p>
+        <a href="smartworker/host.html" class="banner-btn">Diventa un Host</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="map-area">
+    <div class="map-decoration-content"></div>
+    <ul class="map-content">
+      <li>
+        <h1 class="worker-count">302512</h1>
+        <h1 id="worker">lavoratori da conoscere,<h1>
+      </li>
+      <li>
+        <h1 class="places-count">2642</h1>
+        <h1 id="places">spazi da provare</h1>
+      </li>
+      <div id='map'></div>
+    </ul>
+  </section>
+
+  <section class="mockup-area-1" id="mockup-1">
+    <ul class="mockup-content">
+      <img src="./assets/home/mockup/s1.png" class="mockup-1-left">
+      <li class="mockup-1-right">
+        <h2><span>Trova il tuo spazio</span></h2>
+        <p>Con Splace puoi conoscere lavoratori con le tue stesse passioni e condividere con loro spazi di lavoro.
+          Trova la tua community e dai una svolta alla tua giornata lavorativa.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mockup-area-2" id="mockup-2">
+    <ul class="mockup-content">
+      <li class="mockup-2-left">
+        <h2><span>Lasciati trasportare</span></h2>
+        <p>Non solo lavoro! Splace ti offre la possibilità di partecipare
+          ad esperienze ed attività uniche. Ottimizza le tue pause con gli eventi proposti dagli host.</p>
+      </li>
+      <img src="./assets/home/mockup/s2.png" class="mockup-2-right">
+    </ul>
+  </section>
+
+  <section class="mockup-area-3" id="mockup-3">
+    <ul class="mockup-content">
+      <img src="./assets/home/mockup/s3.png" class="mockup-3-left">
+      <li class="mockup-3-right">
+        <h2><span>Sfrutta i tuoi spazi</span></h2>
+        <p>Grazie a Splace puoi ottimizzare i tuoi spazi per sfruttarli al meglio.
+          Il caricatore wireless ti permette di controllare con facilità la disponibilità dei tuoi posti!</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <ul class="cta-content">
+      <img src="./assets/home/mockup/isometrico2.png">
+      <li class="cta-center">
+        <h1><span>Cosa aspetti?</span></h1>
+        <p>Entra a far parte della comunità di Splace.
+          <br>Disponibile per iOS e Android.
+        </p>
+        <a href="#" class="banner-btn" id="cta-btn">Inizia adesso</a>
+      </li>
+      <img src="./assets/home/mockup/isometrico1.png">
+    </ul>
+  </section>
+
+
+  <footer class="footer">
+    <div class="l-footer">
+      <img class="logo-footer" src="assets/logo/Logo_splace.png">
+    </div>
+
+    <ul class="r-footer">
+      <li>
+        <h2>Seguici</h2>
+        <ul class="box">
+          <li><a href="https://www.instagram.com/splace.official/">Instagram</a></li>
+        </ul>
+      </li>
+      <li class="features">
+        <h2>Su Splace</h2>
+        <ul class="box h-box">
+          <li><a href="#">Lavora con noi</a></li>
+          <li><a href="#">Contatti</a></li>
+          <li><a href="#">News e annunci</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2>Altro</h2>
+        <ul class="box">
+          <li><a href="#">Termini e condizioni</a></li>
+          <li><a href="#">Norme sulla privacy</a></li>
+          <li><a href="#">Note legali</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="footer-btn-container">
+          <li class="btn-wrapper"><a href="#" class="footer-btn" id="ios-btn">Scarica su iOS</a></li>
+          <li><a href="#" class="footer-btn" id="android-btn">Scarica su Android</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="b-footer">
+      <p id="copyright">© 2021 Splace. All rights reserved.</p>
+      <a href="https://www.instagram.com/splace.official/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/homepage.js"></script>
+
+</body>
+
+</html>
